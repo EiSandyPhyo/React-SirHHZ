@@ -1,0 +1,9 @@
+npm create vite
+y
+san-tar 
+Vanilla (choose)
+JavaScript (choose)
+
+npm i
+npm run dev (whenever u run the code, this types)
+npm run build (to get dist folder)
