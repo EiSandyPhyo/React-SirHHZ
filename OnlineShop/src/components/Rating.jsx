@@ -3,9 +3,9 @@
 import React from "react";
 
 const Rating = ({ rate }) => {
-  const currentRating = rate.toFixed(0);
+  const currentRating = parseInt(rate).toFixed(0);
   const numbers = Array.from({ length: 5 }, (_, i) => i + 1);
-  console.log(numbers);
+  //console.log(numbers);
   return (
     <div className=" flex gap-1 mt-auto">
       {numbers.map((number) => (

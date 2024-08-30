@@ -1,9 +1,14 @@
 //import { createElement } from "react";
 import "./index.css";
 import { createRoot } from "react-dom/client";
-import App from "./App";
+//import App from "./App";
+import { RouterProvider } from "react-router-dom";
+import router from "./routes/router";
 
 const root = document.querySelector("#root");
+
+createRoot(root).render(<RouterProvider router={router}/>);
+
 
 //view - react node
 // const app = createElement(
@@ -30,7 +35,7 @@ const root = document.querySelector("#root");
 // console.log(app);
 
 // render
-createRoot(root).render(App());
+//createRoot(root).render(App());
 
 // const title = document.createElement("p");
 // title.innerText = "Product Categories";
